@@ -22,5 +22,13 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "firstapp": {
+      "tags": []
+    },
+    "firstapp-e2e": {
+      "tags": [],
+      "implicitDependencies": ["firstapp"]
+    }
+  }
 }
