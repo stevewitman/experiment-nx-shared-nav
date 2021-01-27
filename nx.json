@@ -18,6 +18,7 @@
   "projects": {
     "firstapp": { "tags": [] },
     "firstapp-e2e": { "tags": [], "implicitDependencies": ["firstapp"] },
-    "firstapp-shell": { "tags": [] }
+    "firstapp-shell": { "tags": [] },
+    "shared-nav": { "tags": [] }
   }
 }

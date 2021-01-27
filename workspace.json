@@ -161,6 +161,37 @@
           }
         }
       }
+    },
+    "shared-nav": {
+      "projectType": "library",
+      "root": "libs/shared/nav",
+      "sourceRoot": "libs/shared/nav/src",
+      "prefix": "experiment-nx-shared-nav",
+      "targets": {
+        "lint": {
+          "executor": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/nav/tsconfig.lib.json",
+              "libs/shared/nav/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/shared/nav/**/*"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/shared/nav"
+          ],
+          "options": {
+            "jestConfig": "libs/shared/nav/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

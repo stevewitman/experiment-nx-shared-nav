@@ -17,7 +17,8 @@
     "paths": {
       "@experiment-nx-shared-nav/firstapp/shell": [
         "libs/firstapp/shell/src/index.ts"
-      ]
+      ],
+      "@experiment-nx-shared-nav/shared/nav": ["libs/shared/nav/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 
 import { FirstappShellModule } from '@experiment-nx-shared-nav/firstapp/shell';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],

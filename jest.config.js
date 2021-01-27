@@ -1,3 +1,7 @@
 module.exports = {
-  projects: ['<rootDir>/apps/firstapp', '<rootDir>/libs/firstapp/shell'],
+  projects: [
+    '<rootDir>/apps/firstapp',
+    '<rootDir>/libs/firstapp/shell',
+    '<rootDir>/libs/shared/nav',
+  ],
 };
