@@ -21,6 +21,7 @@
               "apps/firstapp/src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "apps/firstapp/src/styles.scss"
             ],
             "scripts": []
@@ -126,6 +127,37 @@
               "**/node_modules/**",
               "!apps/firstapp-e2e/**/*"
             ]
+          }
+        }
+      }
+    },
+    "firstapp-shell": {
+      "projectType": "library",
+      "root": "libs/firstapp/shell",
+      "sourceRoot": "libs/firstapp/shell/src",
+      "prefix": "fa",
+      "targets": {
+        "lint": {
+          "executor": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/firstapp/shell/tsconfig.lib.json",
+              "libs/firstapp/shell/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/firstapp/shell/**/*"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/firstapp/shell"
+          ],
+          "options": {
+            "jestConfig": "libs/firstapp/shell/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }
